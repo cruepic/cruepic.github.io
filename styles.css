@@ -23,8 +23,13 @@ h2{
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 /* navbar */
@@ -55,7 +60,12 @@ nav {
     font-size: 2rem;
 }
 
-a:hover {
+#menu a {
+    text-decoration: none;
+    color: #4c606b;
+}
+
+#menu a:hover {
     color: #239de4;
 }
 
@@ -69,9 +79,11 @@ a:hover {
     flex-direction: wrap;
 }
 
-header img {
+#header img {
     width: 700px;
     height: 500px;
+    object-fit: contain;
+
 }
 
 .button {
@@ -101,6 +113,7 @@ section{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    width: 100%;
 }
 
 .element{
@@ -154,8 +167,17 @@ section{
 
 /* Testimonials */
 
-#testimonials{
+#testimonial-container {
     display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 1%;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 .avatar{
@@ -171,11 +193,6 @@ section{
     border-radius: 100%;
     object-fit: cover;
  }
-
-.testimonials {
-    display: flex;
-    flex-direction: column;
-}
 
 .comment {
     font-size: 3rem;
