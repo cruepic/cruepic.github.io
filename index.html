@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,42 +25,34 @@
     </nav>
     <main>
         <header>
-            <div id="header">
-                <div>
-                    <h3>Latorre Andres</h3>
-                    <H1>Full Stack Developper</H1>
-                    <p>Full stack developer with 5 years of experience. Expertise in JavaScript, React, Node.js, Python,
-                        and Django. Committed to creating robust, scalable, and user-friendly web applications. Let's
-                        turn your ideas into reality.</p>
-                    <a class="button primary" href="mailto:andreslatorre8906@gmail.com">Contact me</a>
-                </div>
-                <div>
-                    <img src="assets/photo_andlat.jpeg" alt="photo profil andres latorre">
-                </div>
+            <div class="left">
+                <h2>LATORRE Andres</h2>
+                <H1>Full Stack Developper</H1>
+                <p>Full stack developer with 5 years of experience. Expertise in JavaScript, React, Node.js, Python,
+                    and Django. Committed to creating robust, scalable, and user-friendly web applications. Let's
+                    turn your ideas into reality.</p>
+                <a class="button primary" href="mailto:andreslatorre8906@gmail.com">Contact me</a>
+            </div>
+            <div class="right">
+                <img src="assets/photo_andlat.jpeg" alt="photo profil andres latorre">
             </div>
         </header>
-        <section>
-            <div id="skills">
-                <div class="element">
-                    <div id="skill-1" class="card skills">
-                        <i class="fa-sharp fa-solid fa-code"></i>
-                        <div class="titles">
-                            <h2>Web developpement</h2>
-                            <p>Creation of high-performance and functional websites tailored to your specific needs.</p>
-                        </div>
+        <section id="skills">
+            <div class="content-container">
+                <div id="skill-1" class="card-skill">
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <div class="titles">
+                        <h2>Web developpement</h2>
+                        <p>Creation of high-performance and functional websites tailored to your specific needs.</p>
                     </div>
                 </div>
-                <div class="element">
-                    <div id="skill-2" class="card">
-                        <i class="fa-sharp fa-regular fa-pen-nib"></i>
-                        <h2>Web design</h2>
-                        <p>Attractive visual design for an optimal and engaging user experience.</p>
-                    </div>
+                <div id="skill-2" class="card-skill">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web design</h2>
+                    <p>Attractive visual design for an optimal and engaging user experience.</p>
                 </div>
-            </div>
-            <div class="element">
-                <div id="skill-3" class="card">
-                    <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                <div id="skill-3" class="card-skill">
+                    <i class="fa-solid fa-brain"></i>
                     <div class="titles">
                         <h2>Problem solving</h2>
                         <p>Effective resolution of technical issues to ensure the smooth operation of your web projects.
@@ -67,11 +60,10 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
-        <section>
+        <section id="projects" data-aos="fade-up">
             <h2>My lasts projects</h2>
-            <div id="projects">
+            <div id="projects-container">
                 <div class="element">
                     <div class="card works">
                         <img src="assets/product-1.png" alt="">
@@ -128,12 +120,12 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="testimonial" data-aos="flip-left" data-aos-duration="2000">
             <h2>Testimonials</h2>
             <div id="testimonial-container">
                 <div class="testimonials">
                     <h3 class="comment">
-                        "excellent professional, I highly recommend."
+                        "Andrés is a dedicated and skilled full stack developer. His expertise in JavaScript, React, Node.js, and Python has been invaluable to our projects. He is a great team player and always willing to go the extra mile to ensure the success of the project. I look forward to working with him again in the future."
                     </h3>
                     <div class="avatar">
                         <img src="assets/avatar-1.jpeg" alt="Review photo partner">
@@ -152,7 +144,7 @@
                 </div>
                 <div class="testimonials">
                     <h3 class="comment">
-                        "excellent professional, I highly recommend."
+                        "Andrés is an exceptional full stack developer. His ability to seamlessly integrate front-end and back-end technologies is unmatched. He consistently delivers high-quality work and is always up-to-date with the latest industry trends. Working with him was a pleasure and a learning experience."
                     </h3>
                     <div class="avatar">
                         <img src="assets/avatar-2.jpeg" alt="Review photo partner">
@@ -164,14 +156,14 @@
                                 <i class="fa-sharp fa-solid fa-star"></i>
                                 <i class="fa-sharp fa-regular fa-star"></i>
                             </h3>
-                            <h3>Maria Martinez</h3>
-                            <p>Product Owner / Microsoft</p>
+                            <h3>Benoit Hamon</h3>
+                            <p>CTO / Poulpeo</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonials">
                     <h3 class="comment">
-                        "excellent professional, I highly recommend."
+                        "I had the privilege of working with Andrés for several years. His problem-solving skills and attention to detail are truly impressive. He not only meets project deadlines but also exceeds expectations with his creative and innovative solutions. Highly recommended for future works!"
                     </h3>
                     <div class="avatar">
                         <img src="assets/avatar-3.jpeg" alt="Review photo partner">
@@ -183,35 +175,38 @@
                                 <i class="fa-sharp fa-solid fa-star"></i>
                                 <i class="fa-sharp fa-solid fa-star"></i>
                             </h3>
-                            <h3>Maria Martinez</h3>
-                            <p>Product Owner / Microsoft</p>
+                            <h3>Julia Schneider</h3>
+                            <p>UX Designer / GSG</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div id="Contact">
-            <div>
-                <h2>Can we work together?</h2>
+    <footer data-aos="fade-up">
+        <div id="contact">
+            <div class="left">
+                <h2>We can go further together</h2>
                 <p>Turn your ideas into reality with an experienced web developer. Let's create high-performance and
                     aesthetically pleasing sites that captivate your audience. Contact me for a tailored project and
                     discover how I can boost your online presence.
                 </p>
             </div>
-            <div>
+            <div class="right">
                 <a class="button primary" href="mailto:andreslatorre8906@gmail.com">Contact me</a>
             </div>
         </div>
         <div id="social-networks">
-            <img src="" alt="Linkedin">
-            <img src="" alt="Instagram">
-            <img src="" alt="Facebook">
-            <img src="" alt="Dribble">
-            <img src="" alt="Behance">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-basketball"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
         </div>
     </footer>
 </body>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
