@@ -7,11 +7,11 @@ html, body {
     color: #4c606b;
     gap: 80px;
     height: 100%;
-    padding: 0 2rem;
+    padding: 0 2em;
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
     margin: 0;
     color: #239de4;
@@ -25,12 +25,12 @@ h2{
 }
 
 h3{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 
@@ -39,12 +39,12 @@ p {
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 5rem 1rem;
+        padding: 1rem;
     }
 
     #logo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     #logo img{
@@ -58,7 +58,7 @@ p {
         gap: 20px;
         list-style: none;
         margin: 0;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     #menu a {
@@ -68,6 +68,7 @@ p {
 
     #menu a:hover {
         color: #239de4;
+        border-bottom: solid 2px;
     }
 
 /* Header */
@@ -76,19 +77,31 @@ p {
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 5%;
     }
+
+    @media screen and (max-width: 800px) { 
+        header {
+            flex-direction: column;
+            
+        }
+        
+        .left {
+        width: 100%;
+        }
+     }
 
     .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        width: 60%;
         align-items: flex-start;
     }
 
     .left h2{
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 600;
         font-family: "Inter Tight";
     }
@@ -98,28 +111,31 @@ p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 50%;
+        width: 40%;
+        max-height: 600px;
     }
 
     .right img {
         width: 100%;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
+        overflow: auto;
+        object-position: top;
     }
 
     .button {
-        width: 30%;
+        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 2%;
         text-decoration: none;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .primary {
         background-color: #143b51;
-        color: lightgray;
+        color: white;
     }
 
     .primary:hover{
@@ -129,17 +145,19 @@ p {
 
 /* Skills */
 
-    section {
+    /* section {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .content-container {
         display: flex;
         padding: 10% 0;
         justify-content: center;
+        gap: 3%;
+        align-items: flex-start;
     }
 
     .card-skill{
@@ -149,11 +167,15 @@ p {
         width: 30%;
         background: white;
         flex-direction: column;
-        overflow: hidden;
+    }
+
+    .card-skill h2 {
+        font-size: 3rem;
     }
 
     i {
         font-size: 6rem;
+        color: #239de4;
     }
 
 /* Projects */
@@ -164,7 +186,7 @@ p {
         flex-wrap: wrap;
         gap: 1%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .element{
@@ -212,6 +234,7 @@ p {
     #testimonial-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         gap: 2%;
     }
@@ -232,8 +255,8 @@ p {
     }
 
     .avatar img{
-        width: 280px;
-        height: 280px;
+        width: 6rem;
+        height: 6rem;
         border-radius: 100%;
         object-fit: cover;
     }
@@ -241,18 +264,20 @@ p {
     .titles h3 {
         margin: 1px;
         margin-bottom: 5%;
+        font-size: 1.5rem;
     }
 
     .titles p {
         margin: 2px;
+        font-size: 1rem;
     }
 
     .titles i {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .comment {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
 
 /* Footer */
@@ -283,5 +308,9 @@ p {
     }
 
     #social-networks i {
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+
+    #social-networks a {
+        color: #143b51;
     }
