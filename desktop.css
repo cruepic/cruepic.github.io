@@ -28,6 +28,7 @@ p {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
+        align-items: center;
     }
 
     #logo {
@@ -38,6 +39,7 @@ p {
     #logo img{
         width: 100%;
         height: 100%;
+        object-fit: contain;
     }
 
     #menu {
@@ -52,11 +54,29 @@ p {
     #menu a {
         text-decoration: none;
         color: #4c606b;
+        transition: color 0.3s ease;
     }
 
     #menu a:hover {
         color: #239de4;
         border-bottom: solid 2px;
+    }
+
+    /* Hamburger menu */
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #4c606b;
+        margin: 4px 0;
+        transition: 0.4s;
     }
 
 /* Header */

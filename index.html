@@ -16,9 +16,16 @@
 
 <body>
     <nav>
-        <div id="logo">
+        <div id="logo" >
             <a href="#"><img src="assets/logo-cruepic.png" alt="logo andres latorre"></a>
         </div>
+
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
         <ul id="menu">
             <li><a href="#skills">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -201,14 +208,24 @@
             </div>
         </div>
         <div id="social-networks">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-solid fa-basketball"></i></a>
-            <a href="#"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://dribbble.com/"><i class="fa-solid fa-basketball"></i></a>
+            <a href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
         </div>
     </footer>
 </body>
+    <script>
+        // JavaScript for hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
